@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "json-server": "^0.16.3",
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "json-server": "json-server --watch db.json",
+    "merge": "node ./api/merge.js",
+    "serve": "npm-run-all -p merge json-server"
+  }
+}
